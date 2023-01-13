@@ -1,0 +1,138 @@
+.content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+.sideContainer {
+  width: 250px;
+  height: 50vh;
+  position: relative;
+  top: 125px;
+  left: 0;
+  display: flex;
+
+  justify-content: center;
+  z-index: 999;
+  color: #fff;
+  position: absolute;
+}
+.dashBlock {
+  border-left: solid 1px #222222;
+  height: 86vh;
+  width: 80%;
+  background-color: #222222;
+  padding-top: 40px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.prodContainer {
+  padding: 15px;
+  width: 90%;
+  height: fit-content;
+  /* border: solid 1px #2bfab7; */
+
+  border-radius: 15px;
+  top: 0px;
+  display: flex;
+  background-color: #0a0a0a;
+  height: 60vh;
+  overflow-y: scroll;
+  margin: 0 auto;
+  /* margin-top: 30px; */
+  color: rgb(0, 0, 0);
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+}
+
+.tabla {
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: #181818;
+  border: 1px solid #6d6d6d;
+}
+.tabla thead {
+  color: rgb(255, 255, 255);
+  background-color: rgb(52, 13, 65);
+  border: 1px solid #6d6d6d;
+  height: 40px;
+}
+
+.tabla td {
+  border: 1px solid #6d6d6d;
+  padding: 10px;
+}
+
+.statusCont {
+  width: fit-content;
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+}
+
+.statusProdOk {
+  width: 10px;
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+.statusProdNo {
+  width: 10px;
+  height: 10px;
+  background-color: #d32f2f;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+.buttonEdit {
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 14px;
+  font-weight: 600;
+  background-color: transparent;
+
+  border: solid 1px rgb(77, 77, 77);
+}
+.buttonEdit:hover {
+  /* animation: buttonHover;
+    animation-fill-mode: both; */
+  transition: 0.15s ease-in-out;
+  background-color: rgb(77, 77, 77);
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 11vh;
+  background-color: rgb(128, 39, 155);
+  padding-left: 95px;
+  z-index: 100;
+}
+
+.productImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.loadingCont {
+  display: flex;
+  position: absolute;
+  left: 28%;
+  right: 45%;
+  margin-top: 150px;
+}
+.loadingBackground {
+  height: 100vh;
+  background-color: black;
+}

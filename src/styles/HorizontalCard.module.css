@@ -1,0 +1,134 @@
+.cardContainer {
+  width: 47%;
+  /* border: solid 1px #555; */
+  border-radius: 8px;
+  height: 100px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.05);
+}
+
+.imgContainer {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  float: left;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  cursor: pointer;
+}
+
+.nameCont {
+  width: 100%;
+}
+
+.name {
+  text-align: left;
+  color: #555;
+  font-size: 14px;
+  width: 370px;
+  position: relative;
+  top: 10px;
+  left: 15px;
+}
+
+.bottomCont {
+  display: flex;
+}
+
+.cardBtn {
+  background-color: transparent;
+  /* border: solid 1px #2bfab7; */
+  border-radius: 5px;
+  color: #555 !important;
+  font-size: 12px;
+  position: relative;
+  float: right;
+  top: 5px;
+  right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cardBtn button {
+  color: #555;
+}
+.cardBtn:hover {
+  transition: 0.15s ease-in-out;
+  background-color: #555;
+  border: solid 1px #555;
+  color: #fff !important;
+}
+
+.price {
+  font-weight: 200;
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  left: 15px;
+  top: 15px;
+  color: #555;
+}
+
+.active {
+  color: #555;
+  text-shadow: 1px 0 #555, -1px 0 #555, 0 1px #555, 0 -1px #555;
+  position: relative;
+  float: right;
+  right: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: -2px;
+}
+
+@media screen and (max-width: 500px) {
+  .cardContainer {
+    width: 90%;
+    height: 230px;
+  }
+
+  .imgContainer {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nameCont {
+    overflow: hidden;
+  }
+
+  .name {
+    font-size: 14px;
+    overflow: hidden;
+  }
+
+  .cardBtn {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .active,
+  .fav {
+    margin-top: 10px;
+    font-size: 25px;
+    width: 30px;
+    display: flex;
+    justify-content: right;
+  }
+  .cardBtn {
+    top: 0px;
+  }
+  .price {
+    top: 0px;
+  }
+}

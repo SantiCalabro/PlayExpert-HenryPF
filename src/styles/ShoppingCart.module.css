@@ -1,0 +1,265 @@
+.container {
+  width: 50%;
+  height: 90vh;
+  overflow: hidden;
+  position: fixed;
+  top: 70px;
+  right: 0px;
+  z-index: 900;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.titleCont {
+  border-bottom: solid 1px #fff;
+  width: 90%;
+  margin-bottom: 20px;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+}
+.title {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 400;
+  position: relative;
+  top: 20px;
+  font-size: 16px;
+  text-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
+}
+.cartContainer {
+  position: absolute;
+  top: 60px;
+}
+.cartArea {
+  border: solid 1px #fff;
+  border-right: none;
+  padding: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 55vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  width: 90%;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.clearBtn {
+  background-color: #2bfab7;
+  border: none;
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  color: #000;
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.clearBtn:hover {
+  background-color: #179b71;
+  color: #fff;
+  transition: 0.15s ease-in-out;
+}
+.clearCont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  left: 35%;
+}
+.exit {
+  position: absolute;
+  margin-top: 10px;
+  right: 40px;
+  font-weight: 200;
+  font-size: 20px;
+  color: #000;
+  z-index: 900;
+  cursor: pointer;
+}
+.total {
+  font-size: 18px;
+  color: #fff;
+  position: relative;
+  left: 40px;
+  top: 10px;
+}
+.startShopping {
+  background-color: #2bfab7;
+  width: 100%;
+  justify-content: center;
+  cursor: pointer;
+  height: 50px;
+  z-index: 600;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+}
+.startShopping h3 {
+  color: #000;
+}
+.startShopping:hover {
+  background-color: #179b71;
+  transition: 0.1s ease-in-out;
+}
+.startShopping:hover h3 {
+  color: #fff;
+}
+.startShopping span {
+  color: #fff;
+  position: relative;
+  font-size: 20px;
+  top: 5px;
+}
+.imgCont {
+  width: 100%;
+  overflow: hidden;
+}
+.imgCont img {
+  width: 132%;
+  height: 100vh;
+}
+
+.imgCont h1 {
+  position: absolute;
+  margin-top: 500px;
+  left: 50px;
+  font-weight: 600;
+  color: #fff;
+  font-size: 35px;
+}
+
+.imgCont p {
+  position: absolute;
+  margin-top: 550px;
+  left: 50px;
+  font-weight: 200;
+  color: #fff;
+}
+.emptyCart {
+  justify-content: center;
+  text-align: center;
+}
+.emptyCart h3 {
+  color: #fff;
+}
+.emptyCart span {
+  color: #fff;
+  position: relative;
+  top: 30px;
+}
+.emptyCart span:hover {
+  color: #f44336;
+  transition: 0.15s ease-in-out;
+}
+.payment {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.payment h3 {
+  font-size: 16px;
+  /* margin-top: 0px; */
+}
+.loginBtn {
+  background-color: #212121;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.loginBtn:hover {
+  background-color: #0f0f0f;
+  transition: 0.15s ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: fixed;
+    top: 70px;
+    right: 0px;
+    z-index: 900;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .imgCont {
+    display: none;
+  }
+  .cartContainer {
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+    width: 90%;
+  }
+  .cartArea {
+    border: solid 1px rgb(46, 46, 46);
+    padding: 10px;
+    padding-top: 0px;
+    border-radius: 10px;
+    position: relative;
+    width: 95%;
+    margin-left: 0px;
+  }
+
+  .clearCont {
+    width: 50%;
+    left: -10px;
+    float: left;
+  }
+  .clearBtn {
+    background-color: #2bfab7;
+    border: none;
+    height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    color: #000;
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 14px;
+    float: right;
+  }
+  .total {
+    font-size: 14px;
+    float: right;
+    top: 0px;
+    left: -20px;
+    overflow: hidden;
+  }
+  .titleCont {
+    overflow: hidden;
+    border-bottom: solid 1px rgb(46, 46, 46);
+  }
+  .emptyCart {
+    margin-top: -100px;
+  }
+
+  .emptyCart h3 {
+    color: #fff;
+    font-size: 16px;
+    width: 200px;
+    overflow: hidden;
+  }
+  .emptyCart span {
+    color: #fff;
+    position: relative;
+    top: 30px;
+    font-size: 14px;
+  }
+  .payment {
+    height: 40px;
+  }
+}

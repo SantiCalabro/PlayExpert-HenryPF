@@ -1,0 +1,296 @@
+.cardContainer {
+  width: 230px;
+  border: solid 2px #2bfab7;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  overflow: hidden;
+}
+.cardContainerLight {
+  width: 230px;
+  border: solid 2px rgb(128, 39, 155);
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  overflow: hidden;
+}
+.cardContainerLight:hover {
+  width: 230px;
+  border: solid 2px rgb(128, 39, 155);
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px -2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.imgContainer {
+  background-color: white;
+  width: 230px;
+  height: 180px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+}
+
+.contEdit {
+  position: relative;
+  z-index: 1;
+  top: -65px;
+  right: -170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #bebebe;
+  transition: background-color 0.2s ease-in-out;
+  padding: 5px;
+}
+
+.contEdit:hover {
+  background-color: #ad00b3;
+  color: #fff;
+}
+
+.imageEdit {
+  height: fit-content;
+  width: 120px;
+  cursor: pointer;
+  margin-right: 50px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.image {
+  height: fit-content;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.square {
+  border-radius: 0px 0px 10px 10px;
+  border-top: none;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  justify-content: center;
+  height: 130px;
+  cursor: pointer;
+}
+
+.square:hover {
+  box-shadow: -1px 10px 21px -6px rgba(0, 0, 0, 0.91);
+  border-top: none;
+  transition: 0.2s ease-in-out;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.nameCont {
+  width: 90%;
+  float: left;
+  flex-direction: column;
+  display: flex;
+}
+
+.brand {
+  font-weight: 200;
+  font-size: 13px;
+  position: relative;
+  /* bottom: 5px; */
+  height: 25px;
+  z-index: 600;
+}
+
+.price {
+  font-weight: 600;
+  position: relative;
+  top: 5px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.cardBtn {
+  background-color: transparent;
+  border: solid 1px #3d3d3d;
+  border-radius: 20px;
+  width: 95px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  padding-top: 2px;
+  top: 5px;
+}
+
+.cardBtn:hover {
+  background-color: #3bcc9e;
+  border: solid 1px #3bcc9e;
+  color: #2d574a;
+  transition: 0.15s ease-in-out;
+}
+
+.btnAndFav {
+  display: flex;
+  height: 25px;
+  width: 100%;
+  justify-content: center;
+}
+
+.bottomCont {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 10px;
+}
+
+.fav {
+  font-size: 30px;
+  margin-left: 10px;
+  text-shadow: 1px 0 #3d3d3d, -1px 0 #3d3d3d, 0 1px #3d3d3d, 0 -1px #3d3d3d;
+  color: #141414;
+  margin-top: -5px;
+}
+
+.fav:hover {
+  font-size: 30px;
+  margin-left: 10px;
+  text-shadow: 1px 0 #2bfab7, -1px 0 #2bfab7, 0 1px #2bfab7, 0 -1px #2bfab7;
+  color: #141414;
+  margin-top: -5px;
+}
+
+.active {
+  color: #2bfab7;
+  text-shadow: 1px 0 #2bfab7, -1px 0 #2bfab7, 0 1px #2bfab7, 0 -1px #2bfab7;
+  font-size: 30px;
+  margin-left: 10px;
+  position: relative;
+  margin-top: -5px;
+}
+
+@media screen and (max-width: 500px) {
+  .cardContainer {
+    position: relative;
+    right: 0px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .brandCont {
+    height: 50px;
+    overflow: hidden;
+    margin-top: -15px;
+  }
+
+  .brand {
+    font-size: 12px;
+    margin-top: 0px;
+    overflow: hidden;
+    height: 50px;
+  }
+
+  .btnAndFav {
+    margin-top: 0px;
+    overflow: hidden;
+    height: 90px;
+  }
+
+  .cardBtn {
+    position: relative;
+    height: 20px;
+    font-size: 10px;
+    margin-top: -3px;
+  }
+
+  .heartCont {
+    overflow: hidden;
+    width: 20px;
+  }
+
+  .fav {
+    font-size: 18px;
+    top: 10px;
+    overflow: hidden;
+  }
+
+  .active {
+    font-size: 22px;
+  }
+
+  .nameCont {
+    width: 100%;
+    height: 80px;
+    float: left;
+    display: flex;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+
+  .name {
+    font-size: 14px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .bottomCont {
+    margin-top: 0px;
+  }
+
+  .price {
+    height: 80px;
+    position: relative;
+    top: 0px;
+  }
+
+  .fav {
+    font-size: 30px;
+    margin-left: 10px;
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff;
+    color: #141414;
+    margin-top: -12px;
+  }
+
+  .active {
+    color: #2bfab7;
+    text-shadow: 1px 0 #2bfab7, -1px 0 #2bfab7, 0 1px #2bfab7, 0 -1px #2bfab7;
+    font-size: 30px;
+    margin-left: 10px;
+    position: relative;
+    margin-top: -12px;
+    overflow: hidden;
+  }
+
+  .imgContainer {
+    height: 140px;
+    width: 100%;
+  }
+
+  .square {
+    height: 120px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

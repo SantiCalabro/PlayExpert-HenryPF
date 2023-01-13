@@ -1,0 +1,196 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  padding-top: 50px;
+  align-items: center;
+}
+.imgContainer {
+  border-radius: 100px;
+  overflow: hidden;
+  width: fit-content;
+}
+.profilePic {
+  width: 100px;
+  height: 100px;
+}
+
+.authContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.loaderGif {
+  margin-top: 80px;
+}
+.nameContainer {
+  justify-content: center;
+  position: relative;
+  top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  /* color: #fff; */
+  font-size: 18px;
+  text-align: center;
+}
+
+.email {
+  /* color: #fff; */
+  font-weight: 200;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+}
+
+.Link {
+  text-decoration: none;
+}
+
+.DashBoardButton button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: rgb(128, 39, 155);
+  /* color: #fff; */
+  margin-bottom: 8px;
+}
+.DashBoardButton button:hover {
+  background-color: rgb(76, 19, 94);
+  transition: 0.15s ease-in-out;
+}
+
+.profileLine {
+  margin-top: -40px;
+  width: 100%;
+}
+.postalAdressContainer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.title {
+  /* color: #fff; */
+  font-size: 14px;
+  text-align: center;
+}
+.adressCont {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.adressCont h3 {
+  /* color: #fff; */
+  font-size: 12px;
+  font-weight: 200;
+  text-align: center;
+}
+.defaultTag {
+  /* color: #fff; */
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: rgb(128, 39, 155);
+}
+.editBtn {
+  color: #fff;
+  position: relative;
+  left: 145px;
+  top: 15px;
+  cursor: pointer;
+}
+.addAddress {
+  margin-top: 10px;
+  font-size: 14px;
+  background-color: rgb(128, 39, 155);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+}
+.addAddress:hover {
+  background-color: rgb(76, 19, 94);
+  transition: 0.15s ease-in-out;
+}
+.postalAdressContainer {
+  position: relative;
+  top: 30px;
+}
+/* FORM */
+
+@media screen and (max-width: 500px) {
+  .AddressForm {
+    position: relative;
+    top: 100px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    padding-top: 50px;
+    align-items: center;
+    border-bottom: solid 1px gray;
+    margin: 0px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .imgContainer {
+    border-radius: 100px;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    margin-right: 0px;
+    margin-top: 10px;
+  }
+  .imgContainer img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .authContainer {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+    margin-top: -20px;
+  }
+  .profileLine {
+    display: none;
+  }
+  .name {
+    /* color: #fff; */
+    font-size: 18px;
+    overflow: hidden;
+  }
+  .email {
+    height: 20px;
+    font-size: 12px;
+    overflow: hidden;
+    margin-top: -5px;
+  }
+  .postalAdressContainer {
+    margin-top: -20px;
+    margin-bottom: 10px;
+  }
+  .addAddress {
+    margin-bottom: 30px;
+    font-size: 12px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .title {
+    overflow: hidden;
+    position: relative;
+    top: 5px;
+  }
+  .adressCont h3 {
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,415 @@
+.Container {
+  width: 200px;
+  height: 90vh;
+  float: left;
+  margin-left: 30px;
+  position: relative;
+  top: 50px;
+}
+
+.categoryContainer {
+  width: 150px;
+  height: 100vh;
+}
+
+.Container h6 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  top: 10px;
+}
+
+.Container span {
+  cursor: pointer;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.Container span:hover {
+  color: #2bfab7;
+  transition: 0.15s ease-in-out;
+}
+.selectCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.filterContainer {
+  margin-top: 20px;
+}
+.select {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px;
+}
+select {
+  background-color: transparent;
+  border: solid 1px #272727;
+  padding: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+  top: 15px;
+  margin-left: 0px !important;
+  outline: none;
+}
+
+option {
+  color: #000;
+}
+.order {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  margin-bottom: 15px;
+}
+.order button {
+  background-color: transparent;
+  border: solid 1px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  /* margin-top: 10px; */
+  width: 70px;
+}
+.btnCont {
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  margin-top: -5px;
+}
+.order button:hover {
+  transition: 0.15s ease-in-out;
+  border: solid 1px #2bfab7;
+  background-color: #2bfab7;
+  color: #111;
+}
+
+.order button {
+  position: relative;
+  top: 10px;
+  padding-bottom: 3px;
+}
+
+.line {
+  position: relative;
+}
+
+.clearFilters {
+  width: 150px;
+  margin-top: 20px;
+}
+
+.clearFilters button {
+  background-color: transparent;
+  border-radius: 10px;
+  width: 150px;
+  font-size: 14px;
+}
+
+.clearFilters button:hover {
+  transition: 0.15s ease-in-out;
+  background-color: #2bfab7;
+  border: solid 1px #2bfab7;
+  color: #272727;
+}
+
+.sharedInput {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.sharedInput span {
+  color: #fff;
+  text-transform: none;
+  font-size: 10px;
+  font-weight: 200;
+  position: relative;
+  bottom: 5px;
+  text-decoration: none;
+}
+
+.inputSmall {
+  display: inline;
+  width: 30%;
+  height: 25px;
+  margin-bottom: 1px;
+  outline: none;
+}
+
+.inputRight {
+  margin-left: 10%;
+  outline: none;
+}
+
+.sharedInput button {
+  position: relative;
+  top: 2px;
+  left: 15px;
+  background-color: transparent;
+  height: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.sharedInput button:hover {
+  border: solid 1px #fff;
+  transition: 0.15s;
+}
+
+.sharedInput input {
+  background-color: transparent;
+  font-weight: 200;
+  outline: none;
+  font-size: 14px;
+}
+
+.sharedInput input::placeholder {
+  font-size: 14px;
+  font-weight: 200;
+  outline: none;
+}
+
+.sharedInput input:hover,
+.sharedInput button:hover {
+  border: solid 1px #fff;
+  transition: 0.15s ease-in-out;
+}
+
+.filterByTitle {
+  width: 100%;
+  border-bottom: solid 1px gray;
+}
+.category {
+  background-color: transparent;
+  border: solid 1px #272727;
+  padding: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+}
+.label,
+.orderPriceTitle {
+  border-bottom: solid 1px gray;
+}
+
+@media screen and (max-width: 500px) {
+  .Container {
+    width: 100%;
+    height: 130px;
+    position: relative;
+    top: 70px;
+    padding-top: 10px;
+    right: 30px;
+    display: flex;
+    background-color: #000;
+    justify-content: left;
+    padding-left: 20px;
+    overflow: hidden;
+  }
+
+  .filterContainer {
+    width: 90%;
+    position: absolute;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    margin-left: -7px;
+  }
+
+  .filterContainer h6 {
+    height: 15px;
+  }
+
+  .filterContainer hr {
+    display: none;
+  }
+
+  .filterByTitle {
+    font-size: 12px !important;
+
+    overflow: hidden;
+  }
+
+  .select {
+    position: relative;
+    top: 0px;
+    margin-top: 0px;
+    font-size: 10px;
+    height: 40px;
+    overflow: hidden;
+  }
+
+  .selectCont {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 30%;
+    overflow: hidden;
+    padding-right: 5px;
+  }
+
+  .category {
+    margin-top: 0px;
+    font-size: 10px;
+    overflow: hidden;
+  }
+
+  .categoryContainer {
+    height: 120px;
+    overflow: hidden;
+  }
+
+  .brand {
+    position: relative;
+    top: 0px;
+    margin-top: -10px;
+    font-size: 10px;
+    overflow: hidden;
+  }
+
+  .order {
+    position: relative;
+    height: 100px;
+    margin-top: 0px;
+    border-left: solid 1px rgb(167, 167, 167);
+    border-right: solid 1px rgb(167, 167, 167);
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+  }
+
+  .order hr {
+    display: none;
+  }
+  .btnCont {
+    height: 70px;
+
+    margin-top: 0px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .order button {
+    background-color: transparent;
+    border: solid 1px #272727;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    display: block;
+    top: 0px;
+    width: 60px;
+    font-size: 14px;
+  }
+
+  .orderPriceTitle {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    border: none;
+    font-size: 12px !important;
+  }
+
+  .label {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5px;
+    font-size: 12px !important;
+    border: none;
+  }
+
+  .sharedInput {
+    margin-top: 0px;
+    position: relative;
+    right: 0px;
+    height: 120px;
+    width: 30%;
+    display: flex;
+    /* flex-direction: column; */
+    padding-left: 5px;
+  }
+
+  .sharedInput hr {
+    display: none;
+  }
+
+  .sharedInput input {
+    position: absolute;
+    top: 40px;
+    width: 50px;
+    height: 20px;
+    font-size: 14px;
+  }
+
+  .sharedInput input::placeholder {
+    font-size: 14px;
+  }
+
+  .sharedInput button {
+    /* position: absolute; */
+    /* top: 40px; */
+    /* right: 0px;*/
+    margin-left: 50%;
+    margin-top: 40px;
+    background-color: transparent;
+    height: 50px;
+    padding-right: 15px;
+    text-align: center;
+    width: 20px;
+    font-size: 12px;
+  }
+
+  .inputRight {
+    margin-top: 0px;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+
+  .inputLeft {
+    margin-top: 0px;
+  }
+
+  .clearFilters {
+    position: relative;
+    bottom: 10px;
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+
+  .clearFilters button {
+    background-color: transparent;
+    border-radius: 10px;
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .filterByTitle {
+    margin-top: 5px !important;
+    margin-bottom: 3px;
+    border: none;
+  }
+
+  .subContainer {
+    overflow: hidden;
+  }
+}
