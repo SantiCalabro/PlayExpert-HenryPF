@@ -17,12 +17,11 @@ export default function DetailInfo({ handleAddToCart }) {
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVuLDgkPGHh_tQ6VHyxmEpIA81Q0qMwdCUvQ&usqp=CAU";
 
   useEffect(() => {
-    if (product.id) {
+    if (product.name) {
       setStars(product.avgStars);
     }
   }, [product]);
 
-  
   useEffect(() => {
     if (favs && product) {
       favs.find(fav => fav.id === product.id)
@@ -82,9 +81,7 @@ export default function DetailInfo({ handleAddToCart }) {
         ) : (
           <div>
             <label className={D.ratingTitle}>
-              <span className={D.ratingText}>
-                No reviews yet
-              </span>
+              <span className={D.ratingText}>No reviews yet</span>
             </label>
             <label className={D.emptyStar}>★★★★★</label>
           </div>
